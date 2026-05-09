@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Your Name</title>
+  <meta name="description" content="Data analytics project portfolio of [Your Name]." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238B1A1A'/><text y='24' x='6' font-size='20' fill='white' font-family='serif'>A</text></svg>" />
+</head>
+<body>
+
+  <div class="cursor"      aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Your<span>.</span>Name</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <section class="page-hero" aria-labelledby="projects-title">
+    <div class="container">
+      <p class="page-hero-label">Work</p>
+      <h1 class="page-hero-title" id="projects-title">
+        Selected<br>
+        <em>Projects.</em>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ── Projects Body ── -->
+  <section class="projects-body">
+    <div class="container">
+
+      <!-- Filter buttons — add/remove categories to match your projects -->
+      <div class="projects-filter" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="viz">Visualization</button>
+        <button class="filter-btn" data-filter="sql">SQL / Data Eng.</button>
+        <button class="filter-btn" data-filter="bi">Business Intel.</button>
+      </div>
+
+      <!-- ── PROJECT GRID ──────────────────────────────────────────────────── -->
+      <!--
+        To add a project:
+          1. Duplicate a .project-card block below.
+          2. Update href to point to its project page (e.g., project-2.html).
+          3. Update data-category with one or more filter keys (space-separated).
+          4. Update the number, categories, title, description, and tags.
+
+        Use class="project-card wide" to make a card span both columns.
+      -->
+      <div class="projects-grid">
+
+        <!-- Project 1 — Featured / Wide -->
+        <a href="project-template.html"
+           class="project-card wide reveal"
+           data-category="ml viz">
+          <div class="project-card-bg" aria-hidden="true"></div>
+          <div class="project-card-inner">
+            <span class="project-number" aria-hidden="true">01</span>
+            <span class="project-card-arrow" aria-hidden="true">View project →</span>
+            <div>
+              <div class="project-categories" aria-label="Categories">
+                <span class="project-cat">Machine Learning</span>
+                <span class="project-cat">Python</span>
+                <span class="project-cat">Tableau</span>
+              </div>
+              <h2 class="project-card-title">
+                Customer Churn Prediction &amp; Retention Analysis
+              </h2>
+              <p class="project-card-desc">
+                End-to-end churn prediction pipeline for a SaaS business — from
+                feature engineering through model deployment and executive dashboard.
+              </p>
+              <div class="project-card-tags">
+                <span class="tag">XGBoost</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Tableau</span>
+                <span class="tag">SQL</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="#"
+           class="project-card reveal"
+           data-category="viz bi">
+          <div class="project-card-bg" aria-hidden="true"></div>
+          <div class="project-card-inner">
+            <span class="project-number" aria-hidden="true">02</span>
+            <span class="project-card-arrow" aria-hidden="true">View project →</span>
+            <div class="project-categories">
+              <span class="project-cat">Visualization</span>
+              <span class="project-cat">Business Intel.</span>
+            </div>
+            <h2 class="project-card-title">
+              Executive Sales Performance Dashboard
+            </h2>
+            <p class="project-card-desc">
+              Real-time Tableau dashboard consolidating CRM, finance, and ops data
+              for C-suite weekly reviews.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Salesforce</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="#"
+           class="project-card reveal reveal-delay-1"
+           data-category="sql">
+          <div class="project-card-bg" aria-hidden="true"></div>
+          <div class="project-card-inner">
+            <span class="project-number" aria-hidden="true">03</span>
+            <span class="project-card-arrow" aria-hidden="true">View project →</span>
+            <div class="project-categories">
+              <span class="project-cat">SQL</span>
+              <span class="project-cat">Data Engineering</span>
+            </div>
+            <h2 class="project-card-title">
+              Multi-Source Data Pipeline &amp; Warehouse Design
+            </h2>
+            <p class="project-card-desc">
+              Designed and built a dbt + BigQuery pipeline ingesting 6 data sources
+              into a single analytics schema, cutting ad-hoc query time by 70%.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">dbt</span>
+              <span class="tag">BigQuery</span>
+              <span class="tag">Airflow</span>
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="#"
+           class="project-card reveal"
+           data-category="ml">
+          <div class="project-card-bg" aria-hidden="true"></div>
+          <div class="project-card-inner">
+            <span class="project-number" aria-hidden="true">04</span>
+            <span class="project-card-arrow" aria-hidden="true">View project →</span>
+            <div class="project-categories">
+              <span class="project-cat">Machine Learning</span>
+              <span class="project-cat">Forecasting</span>
+            </div>
+            <h2 class="project-card-title">
+              Demand Forecasting for Retail Inventory
+            </h2>
+            <p class="project-card-desc">
+              Time-series forecasting model (Prophet + XGBoost hybrid) reducing
+              overstock costs by 22% across 800+ SKUs.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Prophet</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="#"
+           class="project-card reveal reveal-delay-1"
+           data-category="viz">
+          <div class="project-card-bg" aria-hidden="true"></div>
+          <div class="project-card-inner">
+            <span class="project-number" aria-hidden="true">05</span>
+            <span class="project-card-arrow" aria-hidden="true">View project →</span>
+            <div class="project-categories">
+              <span class="project-cat">Visualization</span>
+              <span class="project-cat">Python</span>
+            </div>
+            <h2 class="project-card-title">
+              Public Transit Ridership Decline — Exploratory Analysis
+            </h2>
+            <p class="project-card-desc">
+              Open-data investigation into post-pandemic transit ridership patterns
+              across 12 U.S. metro areas, published as an interactive report.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Plotly</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Open Data</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 6 -->
+        <a href="#"
+           class="project-card reveal"
+           data-category="bi sql">
+          <div class="project-card-bg" aria-hidden="true"></div>
+          <div class="project-card-inner">
+            <span class="project-number" aria-hidden="true">06</span>
+            <span class="project-card-arrow" aria-hidden="true">View project →</span>
+            <div class="project-categories">
+              <span class="project-cat">Business Intel.</span>
+              <span class="project-cat">SQL</span>
+            </div>
+            <h2 class="project-card-title">
+              Marketing Attribution &amp; ROAS Modeling
+            </h2>
+            <p class="project-card-desc">
+              Multi-touch attribution model replacing last-click to give a full
+              picture of campaign ROI across paid, email, and organic channels.
+            </p>
+            <div class="project-card-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">Looker</span>
+              <span class="tag">Google Ads API</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <!-- ── END PROJECT GRID ── -->
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Your<span>.</span>Name</div>
+          <div class="footer-tagline">Data Analytics Portfolio</div>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+        <div class="footer-copy">
+          &copy; <span class="footer-year"></span> [Your Name].<br>All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

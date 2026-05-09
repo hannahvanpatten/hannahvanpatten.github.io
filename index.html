@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Data Analytics Portfolio</title>
+  <meta name="description" content="Data analytics portfolio of [Your Name] — turning complex data into clear, actionable insights." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon placeholder — replace with your own -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238B1A1A'/><text y='24' x='6' font-size='20' fill='white' font-family='serif'>A</text></svg>" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"     aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Your<span>.</span>Name</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg"        aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+
+    <div class="container">
+      <p class="hero-eyebrow">Data Analyst &amp; Visualization Specialist</p>
+
+      <h1 class="hero-title" id="hero-title">
+        Turning<br>
+        <em>raw data</em><br>
+        into clarity.
+      </h1>
+
+      <p class="hero-subtitle">
+        Insight-driven. Rigorously curious.
+      </p>
+
+      <div class="hero-cta-group">
+        <!-- Featured project CTA — update href to your first project page -->
+        <a href="project-template.html" class="btn btn-primary">
+          View Featured Project
+          <span class="btn-arrow">→</span>
+        </a>
+
+        <div class="hero-featured-label">
+          Featured
+          <!-- Update this with your featured project name -->
+          <strong>Customer Churn Analysis</strong>
+        </div>
+      </div>
+    </div>
+
+    <p class="hero-scroll-hint">Scroll to explore</p>
+  </section>
+
+  <!-- ── Featured Project Strip ── -->
+  <section class="featured-strip" aria-labelledby="featured-heading">
+    <div class="container">
+      <p class="strip-label reveal">Featured Project</p>
+      <div class="featured-card">
+        <!-- Visual block — replace with a screenshot or keep as decorative -->
+        <div class="featured-card-visual reveal">
+          <div class="featured-card-visual-inner">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="40" width="12" height="32" fill="#F2EDE4"/>
+              <rect x="26" y="24" width="12" height="48" fill="#F2EDE4"/>
+              <rect x="44" y="12" width="12" height="60" fill="#F2EDE4"/>
+              <rect x="62" y="30" width="12" height="42" fill="#F2EDE4"/>
+              <line x1="4" y1="72" x2="76" y2="72" stroke="#F2EDE4" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="featured-card-info reveal reveal-delay-1">
+          <!-- Update category, title, description, tags, and link -->
+          <p class="featured-meta">Machine Learning · Python · Tableau</p>
+          <h2 class="featured-title" id="featured-heading">
+            Customer Churn Prediction &amp; Retention Analysis
+          </h2>
+          <p class="featured-desc">
+            Built an end-to-end churn prediction pipeline for a SaaS company using
+            gradient boosted trees, identifying the top behavioral drivers of
+            churn and translating them into a prioritized retention playbook.
+          </p>
+          <div class="featured-tags">
+            <span class="tag">Python</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+          <a href="project-template.html" class="btn btn-outline-dark">
+            Read Case Study <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Intro / About Teaser ── -->
+  <section class="intro-strip" aria-label="About teaser">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-heading reveal">
+          Analytical<br>
+          thinking,<br>
+          <em>human-first</em><br>
+          storytelling.
+        </div>
+
+        <div class="intro-body">
+          <p class="reveal reveal-delay-1">
+            Hi — I'm <strong>[Your Name]</strong>, a data analyst based in
+            [Your City]. I specialize in making large, messy datasets tell
+            coherent, actionable stories for business decision-makers.
+          </p>
+          <p class="reveal reveal-delay-2">
+            My work spans exploratory data analysis, predictive modeling,
+            dashboard design, and communicating findings to non-technical
+            stakeholders. I care as much about the <em>presentation</em> of
+            insight as its discovery.
+          </p>
+
+          <div class="intro-stats reveal reveal-delay-3">
+            <!-- Update these numbers to reflect your actual experience -->
+            <div>
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years experience</div>
+            </div>
+            <div>
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Projects completed</div>
+            </div>
+            <div>
+              <div class="stat-number">3</div>
+              <div class="stat-label">Industries served</div>
+            </div>
+          </div>
+
+          <br><br>
+          <a href="about.html" class="btn btn-outline-dark reveal reveal-delay-3">
+            More about me <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Your<span>.</span>Name</div>
+          <div class="footer-tagline">Data Analytics Portfolio</div>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <!-- Update href with your actual LinkedIn / GitHub URLs -->
+          <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+
+        <div class="footer-copy">
+          &copy; <span class="footer-year"></span> [Your Name].<br>All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
