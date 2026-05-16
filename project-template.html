@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ── UPDATE: page title ── -->
-  <title>Customer Churn Analysis — Your Name</title>
-  <meta name="description" content="Case study: Customer Churn Prediction & Retention Analysis." />
+  <title>User Engagement and Retention Analysis — Hannah Van Patten</title>
+  <meta name="description" content="Case study: User Engagement & Retention Analysis." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238B1A1A'/><text y='24' x='6' font-size='20' fill='white' font-family='serif'>A</text></svg>" />
 </head>
@@ -16,7 +16,7 @@
 
   <!-- ── Navigation ── -->
   <nav aria-label="Main navigation">
-    <a href="index.html" class="nav-logo">Your<span>.</span>Name</a>
+    <a href="index.html" class="nav-logo">Hannah<span>.</span>Van Patten</a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -31,11 +31,11 @@
   <section class="page-hero" aria-labelledby="project-title">
     <div class="container">
       <!-- ── UPDATE: category label ── -->
-      <p class="page-hero-label">Machine Learning · Python · Tableau</p>
+      <p class="page-hero-label">User Behavior · Python · Tableau</p>
       <!-- ── UPDATE: project title ── -->
       <h1 class="page-hero-title" id="project-title">
-        Customer Churn<br>
-        <em>Prediction.</em>
+        User Engagement &amp;<br>
+        <em>Retention.</em>
       </h1>
     </div>
   </section>
@@ -59,43 +59,43 @@
 
           <h2>Overview</h2>
           <p>
-            A SaaS company was losing ~8% of its subscriber base each quarter
-            but had no systematic way to predict which customers were at risk
-            before they cancelled. The goal: build a production-ready churn
-            model that the retention team could act on weekly.
+            A video game publisher was losing ~6% of its live-service game's 
+            subscriber base each quarter despite regular major content updates. 
+            The goal: examine user behavior before and after the latest update 
+            and identify the driving force behind the dropping numbers.
           </p>
 
           <h2>Problem Statement</h2>
           <p>
-            Reactive cancellation surveys captured reasons after the fact, but
-            provided no lead time for intervention. The business needed a
-            proactive score — a probability of churn in the next 30 days —
-            attached to every active account, refreshed weekly.
+            Subscriptions were in decline, but social listening was proving 
+            insufficient to identify the contributing factors. The business 
+            needed to measure player engagement and determine why the content 
+            updates were not slowing the churn rate.
           </p>
 
           <h2>Methodology</h2>
           <p>
-            The project followed a standard ML lifecycle with emphasis on
-            interpretability (the retention team needed to understand <em>why</em>
-            a customer was at risk, not just that they were):
+            The project followed a standard analysis procedure with emphasis on
+            interpretability (the product team needed to understand <em>why</em>
+            subscriptions were dropping, not just that they were):
           </p>
           <ul>
-            <li>Extracted 18 months of event-level usage data from the product database via SQL</li>
-            <li>Engineered 40+ features across engagement, billing history, support tickets, and account age</li>
-            <li>Trained a gradient-boosted classifier (XGBoost) with SMOTE oversampling to handle class imbalance</li>
-            <li>Evaluated models using precision-recall AUC; final model achieved 0.81 AUC on held-out test set</li>
-            <li>Used SHAP values to produce per-account explanations surfaced in the Tableau dashboard</li>
+            <li>Extracted 4 months of game session data from the database via SQL</li>
+            <li>Used Python to clean up data quality issues, including missing values, incorrect data types, and inconsistent formatting</li>
+            <li>Engineered a metric to measure player engagement based on days logged in per week, game session length, and participation in social events</li>
+            <li>Added calculated fields to the dataset via Python to track user's engagement scores</li>
+            <li>Visualized the data in Tableau and compiled relevant views into a dashboard that told the data's story</li>
           </ul>
 
           <!-- Second visual — replace as needed -->
           <div class="project-visual-block">
             <div class="project-visual-block-inner">
-              [ SHAP feature importance chart ]
+              [ carousel of Jupyter Notebook images ]
             </div>
           </div>
 
           <h2>Key Findings</h2>
-          <p>
+          <!-- <p>
             The three strongest predictors of churn were:
           </p>
           <ul>
@@ -106,10 +106,10 @@
           <p>
             Accounts with all three risk factors had a 64% observed churn rate vs. the
             8% baseline — providing a highly targetable cohort for the retention team.
-          </p>
+          </p> -->
 
           <h2>Outcome &amp; Impact</h2>
-          <p>
+          <!-- <p>
             The model and accompanying Tableau dashboard were deployed in Q3 2023.
             In the first full quarter of operation, the retention team ran targeted
             outreach on the top 150 at-risk accounts per week. Measured results:
@@ -118,12 +118,13 @@
             <li>Quarterly churn rate dropped from 8.1% to 5.9% (−27%)</li>
             <li>Estimated annualized revenue retained: ~$1.4M ARR</li>
             <li>Retention team efficiency improved — 3× fewer manual account reviews per week</li>
-          </ul>
+          </ul> -->
 
           <h2>Tools &amp; Technologies</h2>
           <p>
-            Python (Pandas, Scikit-learn, XGBoost, SHAP, Matplotlib),
-            PostgreSQL, dbt, Tableau, GitHub Actions for weekly model refresh.
+            Python (Pandas, NumPy, Matplotlib, Seaborn),
+            SQL, 
+            Tableau
           </p>
 
           <!-- ── PROJECT NAVIGATION ── -->
@@ -131,12 +132,12 @@
             <div class="nav-project-item">
               <p class="nav-project-dir">← Previous</p>
               <!-- Update href and name -->
-              <a href="#" class="nav-project-name">Executive Sales Dashboard</a>
+              <a href="#" class="nav-project-name"></a>
             </div>
             <div class="nav-project-item" style="text-align:right;">
               <p class="nav-project-dir">Next →</p>
               <!-- Update href and name -->
-              <a href="#" class="nav-project-name">Multi-Source Data Pipeline</a>
+              <a href="#" class="nav-project-name"></a>
             </div>
           </nav>
 
@@ -152,23 +153,23 @@
               <!-- ── UPDATE each meta row ── -->
               <div class="meta-row">
                 <span class="meta-key">Year</span>
-                <span class="meta-value">2023</span>
+                <span class="meta-value">2026</span>
               </div>
-              <div class="meta-row">
+              <!--<div class="meta-row">
                 <span class="meta-key">Role</span>
                 <span class="meta-value">Lead Analyst</span>
-              </div>
+              </div>-->
               <div class="meta-row">
                 <span class="meta-key">Industry</span>
-                <span class="meta-value">SaaS / B2B Software</span>
+                <span class="meta-value">Entertainment / Digital Media</span>
               </div>
-              <div class="meta-row">
+              <!--<div class="meta-row">
                 <span class="meta-key">Duration</span>
                 <span class="meta-value">10 weeks</span>
-              </div>
+              </div>-->
               <div class="meta-row">
                 <span class="meta-key">Type</span>
-                <span class="meta-value">ML · Dashboard · Strategy</span>
+                <span class="meta-value">User Behavior · Dashboard · Strategy</span>
               </div>
             </div>
 
@@ -176,14 +177,10 @@
               <p class="project-meta-label">Stack</p>
               <div class="skills-list">
                 <span class="skill-chip">Python</span>
-                <span class="skill-chip">XGBoost</span>
-                <span class="skill-chip">SHAP</span>
-                <span class="skill-chip">Scikit-learn</span>
                 <span class="skill-chip">Pandas</span>
                 <span class="skill-chip">PostgreSQL</span>
                 <span class="skill-chip">dbt</span>
                 <span class="skill-chip">Tableau</span>
-                <span class="skill-chip">GitHub Actions</span>
               </div>
             </div>
 
@@ -193,11 +190,11 @@
               <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:0.25rem;">
                 <!-- Remove or update these as appropriate -->
                 <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center;">
-                  View on GitHub <span class="btn-arrow">→</span>
+                  View on Tableau <span class="btn-arrow">→</span>
                 </a>
-                <a href="#" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;">
+                <!--<a href="#" target="_blank" rel="noopener" class="btn btn-outline" style="justify-content:center;">
                   Live Dashboard <span class="btn-arrow">→</span>
-                </a>
+                </a>-->
               </div>
             </div>
 
@@ -213,7 +210,7 @@
     <div class="container">
       <div class="footer-inner">
         <div>
-          <div class="footer-logo">Your<span>.</span>Name</div>
+          <div class="footer-logo">Hannah<span>.</span>Van Patten</div>
           <div class="footer-tagline">Data Analytics Portfolio</div>
         </div>
         <ul class="footer-links">
@@ -224,7 +221,7 @@
           <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
         <div class="footer-copy">
-          &copy; <span class="footer-year"></span> [Your Name].<br>All rights reserved.
+          &copy; <span class="footer-year"></span> [Hannah Van Patten].<br>All rights reserved.
         </div>
       </div>
     </div>
