@@ -304,7 +304,7 @@ section { position: relative; }
   font-size: 2rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(242, 237, 228, 0.25);
+  color: var(--beige);
   opacity: 0;
   animation: fadeIn 1s ease 1.2s forwards;
 }
@@ -314,7 +314,7 @@ section { position: relative; }
   display: block;
   width: 1px;
   height: 48px;
-  background: rgba(242, 237, 228, 0.15);
+  background: var(--beige);
   animation: scrollLine 2s ease 1.5s infinite;
 }
 
