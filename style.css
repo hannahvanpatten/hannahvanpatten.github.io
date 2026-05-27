@@ -58,7 +58,7 @@ img { display: block; max-width: 100%; }
   position: fixed;
   width: 10px;
   height: 10px;
-  background: var(--crimson);
+  background: var(--beige);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -301,7 +301,7 @@ section { position: relative; }
   align-items: center;
   gap: 0.75rem;
   font-family: var(--font-mono);
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--beige);
@@ -312,8 +312,8 @@ section { position: relative; }
 .hero-scroll-hint::before {
   content: '';
   display: block;
-  width: 1px;
-  height: 48px;
+  width: 0.04rem; /* was 2px */
+  height: 3rem; /* was 48px */
   background: var(--beige);
   animation: scrollLine 2s ease 1.5s infinite;
 }
