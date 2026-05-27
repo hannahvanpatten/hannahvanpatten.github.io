@@ -632,7 +632,7 @@ footer {
 
 .page-hero-label {
   font-family: var(--font-mono);
-  font-size: 1.4rem;
+  font-size: 2.8rem; /* was 1.4 */
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--crimson-mid);
