@@ -632,7 +632,7 @@ footer {
 
 .page-hero-label {
   font-family: var(--font-mono);
-  font-size: 2.8rem; /* was 1.4 */
+  font-size: 2rem; /* was 2.8 */
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--crimson-mid);
@@ -1000,7 +1000,7 @@ footer {
 
 .project-card-arrow {
   position: absolute;
-  top: 0.25rem; /* was 1.5 */
+  top: 0.75rem; /* was 0.75 */
   left: 2.5rem;
   font-family: var(--font-mono);
   font-size: 0.7rem;
