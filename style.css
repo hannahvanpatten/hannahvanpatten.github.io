@@ -1091,7 +1091,7 @@ footer {
   overflow: visible;
 }
 
-.project-visual-block-inner {
+/*.project-visual-block-inner {
   position: absolute;
   inset: 0;
   background:
@@ -1110,7 +1110,7 @@ footer {
   letter-spacing: 0.15em;
   color: rgba(242, 237, 228, 0.2);
   text-transform: uppercase;
-}
+}*/
 
 .project-sidebar-sticky {
   position: sticky;
