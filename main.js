@@ -104,3 +104,101 @@ document.addEventListener('DOMContentLoaded', () => {
  if (yearEl) yearEl.textContent = new Date().getFullYear();
  
 });
+
+/* Image carousel */
+const images = [
+            { src: 'eng_without_ret_code_snip_1.png', alt: 'Dashboard Overview' },
+            { src: 'eng_without_ret_code_snip_2.png', alt: 'Analysis Results' },
+            { src: 'eng_without_ret_code_snip_3.png', alt: 'Data Insights' },
+            { src: 'eng_without_ret_code_snip_4.png', alt: 'Findings Summary' },
+            { src: 'eng_without_ret_code_snip_5.png', alt: 'Findings Summary' },
+            // Add more images here
+        ];
+
+        let currentSlideIndex = 0;
+        let autoPlayInterval;
+
+        // Initialize carousel
+        function initCarousel() {
+            const carouselInner = document.getElementById('carouselInner');
+            const indicatorContainer = document.getElementById('indicatorContainer');
+
+            // Create slides
+            images.forEach((image, index) => {
+                const slide = document.createElement('div');
+                slide.className = `carousel-slide ${index === 0 ? 'active' : ''}`;
+                slide.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
+                carouselInner.appendChild(slide);
+
+                // Create indicator dots
+                const dot = document.createElement('div');
+                dot.className = `dot ${index === 0 ? 'active' : ''}`;
+                dot.onclick = () => goToSlide(index);
+                indicatorContainer.appendChild(dot);
+            });
+
+            document.getElementById('totalSlides').textContent = images.length;
+            updateButtonStates();
+            startAutoPlay();
+        }
+
+        function goToSlide(index) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.dot');
+
+            // Remove active class
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Add active class to current slide and dot
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+
+            currentSlideIndex = index;
+            document.getElementById('currentSlide').textContent = index + 1;
+            updateButtonStates();
+            resetAutoPlay();
+        }
+
+        function nextSlide() {
+            if (currentSlideIndex < images.length - 1) {
+                goToSlide(currentSlideIndex + 1);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlideIndex > 0) {
+                goToSlide(currentSlideIndex - 1);
+            }
+        }
+
+        function updateButtonStates() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            prevBtn.disabled = currentSlideIndex === 0;
+            nextBtn.disabled = currentSlideIndex === images.length - 1;
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(() => {
+                if (currentSlideIndex < images.length - 1) {
+                    goToSlide(currentSlideIndex + 1);
+                }
+            }, 5000); // Change slide every 5 seconds
+        }
+
+        function resetAutoPlay() {
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+
+        // Stop autoplay on user interaction
+        document.addEventListener('click', () => {
+            if (event.target.tagName === 'BUTTON' || event.target.classList.contains('dot')) {
+                resetAutoPlay();
+            }
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', initCarousel);
