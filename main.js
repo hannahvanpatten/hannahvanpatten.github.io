@@ -185,7 +185,7 @@ const images = [
                 if (currentSlideIndex < images.length - 1) {
                     goToSlide(currentSlideIndex + 1);
                 }
-            }, 5000); // Change slide every 5 seconds
+            }, 15000); // Change slide every 15 seconds
         }
 
         function resetAutoPlay() {
