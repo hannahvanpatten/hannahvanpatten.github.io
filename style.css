@@ -51,6 +51,11 @@ img { display: block; max-width: 100%; }
   color: var(--beige);
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* ============================================
    CUSTOM CURSOR
    ============================================ */
