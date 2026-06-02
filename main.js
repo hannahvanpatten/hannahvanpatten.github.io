@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Image carousel */
 const images = [
-            { src: 'eng_without_ret_code_snip_1.png', alt: 'Dashboard Overview' },
-            { src: 'eng_without_ret_code_snip_2.png', alt: 'Analysis Results' },
-            { src: 'eng_without_ret_code_snip_3.png', alt: 'Data Insights' },
-            { src: 'eng_without_ret_code_snip_4.png', alt: 'Findings Summary' },
-            { src: 'eng_without_ret_code_snip_5.png', alt: 'Findings Summary' },
+            { src: 'eng_without_ret_code_snip_1.png', alt: 'Data Cleaning Snippet' },
+            { src: 'eng_without_ret_code_snip_2.png', alt: 'Data Cleaning Snippet' },
+            { src: 'eng_without_ret_code_snip_3.png', alt: 'Data Cleaning Snippet' },
+            { src: 'eng_without_ret_code_snip_4.png', alt: 'Data Cleaning Snippet' },
+            { src: 'eng_without_ret_code_snip_5.png', alt: 'Data Cleaning Snippet' },
             // Add more images here
         ];
 
