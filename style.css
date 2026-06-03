@@ -425,7 +425,7 @@ section { position: relative; }
 }
 
 .featured-card-visual {
-  aspect-ratio: 16/10;
+  aspect-ratio: 1/1.69 ; /* was 16/10 */
   background: var(--black);
   position: relative;
   overflow: hidden;
